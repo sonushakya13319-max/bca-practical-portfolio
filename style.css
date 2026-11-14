@@ -1,0 +1,25 @@
+body {
+     backgroun-color:lightpink;
+     text-align:center;
+     font-family:arial;
+}
+
+h1   {
+     color:darkgreen;
+}
+
+h2   {
+     color:green;
+}
+
+p    {
+     font-size:18px;
+     color:black;
+}
+
+button{
+     background-color:blue;
+     color:white;
+     padding:10px;
+     border;none
+}
