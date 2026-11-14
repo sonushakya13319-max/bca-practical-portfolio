@@ -1,0 +1,18 @@
+<html> 
+<head><title>FAQ Section</title><link rel="stylesheet" href="style5.css"> 
+</head><body><h1>Frequently Asked Questions</h1><div class="faq"> 
+<div class="question" onclick="showAnswer(1)">  1. What is HTML? 
+</div><div class="answer" id="ans1"> HTML is used to create web 
+pages.</div></div><div class="faq"><div class="question" 
+onclick="showAnswer(2)">  2. What is CSS?</div> 
+<div class="answer" id="ans2">CSS is used to style web pages.</div> 
+</div><div class="faq"><div class="question" onclick="showAnswer(3)"> 
+3. What is JavaScript?  </div><div class="answer" id="ans3"> 
+JavaScript makes web pages interactive.</div></div><div class="faq"><div 
+class="question" onclick="showAnswer(4)">4. What is a Website?</div><div 
+class="answer" id="ans4">A website is a collection of web 
+pages.</div></div><script>function showAnswer(num) {var answer = 
+document.getElementById("ans" + num); if (answer.style.display == "block") 
+{answer.style.display = "none";} else { answer.style.display = "block"; }  } 
+</script></body> 
+</html>
