@@ -88,35 +88,56 @@ h2 {
     line-height: 1.8;
 }
 
-/* NEW: SKILLS SECTION FIX */
+
+.skills-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 35px;
+}
 
 .skill-box {
-    background: #172238;
-    padding: 15px;
-    border-radius: 10px;
-    margin: 15px auto;
-    max-width: 600px;
+    background: #151f35;
+    padding: 20px;
+    width: 220px;
+    border-radius: 12px;
+    text-align: left;
+    border: 1px solid #293750;
 }
 
 .skill-box h3 {
-    margin-bottom: 10px;
-    color: #70aaff;
+    color: white;
+    margin-bottom: 15px;
 }
 
-.progress {
-    height: 10px;
-    background: #29364c;
+.progress-bar {
+    width: 100%;
+    height: 7px;
+    background: #303b50;
     border-radius: 10px;
     overflow: hidden;
 }
 
-.progress-bar {
+.progress {
     height: 100%;
-    background: #579bff;
+    background: #438cff;
     border-radius: 10px;
 }
 
-/* NEW: FILTER BUTTON DESIGN */
+.skill-status {
+    color: #438cff;
+    font-size: 13px;
+    margin-top: 10px;
+}
+
+@media (max-width: 600px) {
+    .skill-box {
+        width: 85%;
+    }
+}
+
+
 
 .filter-buttons {
     text-align: center;
@@ -142,7 +163,7 @@ h2 {
     transform: translateY(-3px);
 }
 
-/* PRACTICAL CARDS */
+
 
 .cards {
     display: grid;
@@ -160,7 +181,6 @@ h2 {
     flex-direction: column;
 }
 
-/* NEW: HIDE FILTERED PRACTICALS */
 
 .card.hide {
     display: none;
@@ -238,42 +258,54 @@ footer {
 </p>
 
 </section><section id="skills">
-    <h2>My Skills</h2><div class="skill-box">
-    <h3>HTML</h3>
-    <div class="progress">
-        <div class="progress-bar" style="width:80%"></div>
-    </div>
-</div>
+    <h2>My Skills</h2>
 
-<div class="skill-box">
-    <h3>CSS</h3>
-    <div class="progress">
-        <div class="progress-bar" style="width:70%"></div>
-    </div>
-</div>
+    <div class="skills-container">
 
-<div class="skill-box">
-    <h3>JavaScript</h3>
-    <div class="progress">
-        <div class="progress-bar" style="width:50%"></div>
-    </div>
-</div>
+        <div class="skill-box">
+            <h3>HTML</h3>
+            <div class="progress-bar">
+                <div class="progress" style="width: 90%"></div>
+            </div>
+            <p class="skill-status">Learning Complete</p>
+        </div>
 
-<div class="skill-box">
-    <h3>Web Designing</h3>
-    <div class="progress">
-        <div class="progress-bar" style="width:90%"></div>
-    </div>
-</div>
+        <div class="skill-box">
+            <h3>CSS</h3>
+            <div class="progress-bar">
+                <div class="progress" style="width: 70%"></div>
+            </div>
+            <p class="skill-status">Learning</p>
+        </div>
 
-<div class="skill-box">
-    <h3>GitHub</h3>
-    <div class="progress">
-        <div class="progress-bar" style="width:60%"></div>
-    </div>
-</div>
+        <div class="skill-box">
+            <h3>JavaScript</h3>
+            <div class="progress-bar">
+                <div class="progress" style="width: 35%"></div>
+            </div>
+            <p class="skill-status">Learning</p>
+        </div>
 
-</section><section id="practicals"><h2>My Practicals</h2><!-- NEW: FILTER BUTTONS --><div class="filter-buttons"><button class="active" onclick="filterPractical('all', this)">All</button>
+        <div class="skill-box">
+            <h3>Web Designing</h3>
+            <div class="progress-bar">
+                <div class="progress" style="width: 60%"></div>
+            </div>
+            <p class="skill-status">Learning</p>
+        </div>
+
+        <div class="skill-box">
+            <h3>GitHub</h3>
+            <div class="progress-bar">
+                <div class="progress" style="width: 75%"></div>
+            </div>
+            <p class="skill-status">Learning</p>
+        </div>
+
+    </div>
+</section>
+    
+    <section id="practicals"><h2>My Practicals</h2><!-- NEW: FILTER BUTTONS --><div class="filter-buttons"><button class="active" onclick="filterPractical('all', this)">All</button>
 
 <button onclick="filterPractical('html', this)">HTML</button>
 
